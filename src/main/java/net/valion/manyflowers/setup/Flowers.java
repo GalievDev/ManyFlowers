@@ -55,7 +55,9 @@ public class Flowers {
             new Gaillardia(StatusEffects.FIRE_RESISTANCE, 3,
                     FabricBlockSettings.copy(Blocks.DANDELION).nonOpaque()));
 
-
+    public static final Block ORIENTAL_POPPY = registerBlock("oriental_poppy",
+            new OrientalPoppy(StatusEffects.FIRE_RESISTANCE, 3,
+                    FabricBlockSettings.copy(Blocks.DANDELION).nonOpaque()));
 
     private static Item registerBlockItem(String name, Block block, ItemGroup group, String tooltipKey) {
         return Registry.register(Registry.ITEM, new Identifier(MOD_ID, name),
